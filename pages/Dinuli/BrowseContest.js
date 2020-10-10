@@ -1,93 +1,16 @@
 import React from 'react';
 import {
-    SafeAreaView,
     ScrollView,
     View,
-    StatusBar, StyleSheet,
+    StatusBar, StyleSheet, TouchableOpacity,
 } from 'react-native';
 import {ListItem, Text, Button} from 'react-native-elements'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import ContestDetail from "./ContestDetail";
 
 const BrowseContest: () => React$Node = () => {
 
-
     const list = [
-        // {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // },
-        // {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // },
-        // {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // },
-        // {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // }, {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // }, {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // }, {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // }, {
-        //     name: 'Amy Farha',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
-        //     subtitle: 'Vice President'
-        // },
-        // {
-        //     name: 'Chris Jackson',
-        //     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        //     subtitle: 'Vice Chairman'
-        // },
         {
             status: 'Guaranteed',
             title: 'Contest title',
@@ -176,10 +99,14 @@ const BrowseContest: () => React$Node = () => {
         }
     ]
 
+    let onPressButton = () => {
+        window.location.href = './ContestDetail';
+
+    }
+
     return (
         <>
             <StatusBar barStyle="dark-content" />
-
                 <ScrollView
                     contentInsetAdjustmentBehavior="automatic"
                 >
@@ -191,9 +118,10 @@ const BrowseContest: () => React$Node = () => {
                                 type="clear"
                                 icon={
                                     <Icon
-                                        name="arrow-right"
-                                        size={15}
-                                        color="white"
+                                        name="sort"
+                                        size={22}
+                                        color="#A3EBFB"
+                                        style={{padding: 5, margin: 1}}
                                     />
                                 }
                             />
@@ -202,33 +130,51 @@ const BrowseContest: () => React$Node = () => {
                                 type="clear"
                                 icon={
                                     <Icon
-                                        name="arrow-right"
-                                        size={15}
-                                        color="white"
+                                        name="filter"
+                                        size={22}
+                                        color="#A3EBFB"
+                                        style={{padding: 5, margin: 1}}
                                     />
                                 }
                             />
                         </View>
 
-                    <View
-                        const path
-                    >
+                    <View>
+
                         {
                             list.map((l, i) => (
                                 <ListItem key={i} bottomDivider>
                                     <ListItem.Content>
-                                        <ListItem.Title style={styles.SectionStatus}>{l.status}</ListItem.Title>
-                                        <ListItem.Subtitle style={styles.sectionTitle}>{l.title}</ListItem.Subtitle>
-                                        <ListItem.Subtitle>{l.entries}  <Text>  | </Text>  {l.timeStamp}</ListItem.Subtitle>
-                                        <ListItem.Content>
-                                            <Text>{l.price}</Text>
-                                        </ListItem.Content>
-
+                                        <View style={styles.listContainer}>
+                                        <View style={{width: '75%'}}>
+                                            <ListItem.Title style={styles.SectionStatus}>
+                                                {l.status}
+                                            </ListItem.Title>
+                                            <TouchableOpacity>
+                                            <ListItem.Subtitle
+                                                style={styles.sectionTitle}
+                                                onPress={onPressButton}
+                                            >
+                                                {l.title}
+                                            </ListItem.Subtitle>
+                                            </TouchableOpacity>
+                                            <ListItem.Subtitle>
+                                                {l.entries}  <Text>  | </Text>  {l.timeStamp}
+                                            </ListItem.Subtitle>
+                                        </View>
+                                            <View style={{width: '25%'}}>
+                                            <ListItem.Subtitle>
+                                                <Text>{l.price}</Text>
+                                            </ListItem.Subtitle>
+                                        </View>
+                                        </View>
                                     </ListItem.Content>
                                 </ListItem>
                             ))
                         }
+
                     </View>
+
                     </View>
                 </ScrollView>
 
@@ -240,6 +186,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center"
+    },
+    listContainer: {
+        flexDirection: "row",
+        flex: 1,
+        alignItems: 'center'
     },
     sectionFilter: {
         flexDirection: 'row',

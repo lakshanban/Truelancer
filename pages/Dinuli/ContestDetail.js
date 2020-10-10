@@ -207,6 +207,8 @@ const styles = StyleSheet.create({
     },
     TextFlexLeft : {
         justifyContent: 'flex-start',
+        fontWeight: 'bold',
+
     },
     TextFlexRight:{
         justifyContent: 'flex-end',

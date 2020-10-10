@@ -1,29 +1,35 @@
 import React from 'react';
 import {
-    SafeAreaView,
     StyleSheet,
     ScrollView,
     View,
-    StatusBar, Image,
+    StatusBar
 } from 'react-native';
 import {AppStyles} from "./AppStyles";
 import {Button, Input, Text} from "react-native-elements";
 import ImagePicker from 'react-native-image-picker';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const EditProfile: () => React$Node = () => {
     return (
             <>
                 <StatusBar barStyle="dark-content" />
-                {/*<SafeAreaView>*/}
                     <ScrollView
                         contentInsetAdjustmentBehavior="automatic"
                         style={styles.scrollView}>
 
                         <View style={styles.container}>
                             <View>
+                                <Icon
+                                    name="user"
+                                    size={70}
+                                    color="#A3EBFB"
+                                    style={{paddingLeft:60}}
+                                />
                                   <Text
-                                      style={{color: '#80D1FF'}}
-                                  >Change profile picture</Text>
+                                      style={{color: '#80D1FF'}}>
+                                      Change profile picture
+                                  </Text>
                             </View>
                             <View style={styles.InputContainer}>
                                 <Input
@@ -125,11 +131,9 @@ const EditProfile: () => React$Node = () => {
                             </View>
                             <Button
                                 title="Save"
-                                style={{width: "100%"}}
-                            />
+                                />
                         </View>
                     </ScrollView>
-                {/*</SafeAreaView>*/}
             </>
     );
 }
