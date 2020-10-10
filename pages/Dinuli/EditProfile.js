@@ -4,25 +4,26 @@ import {
     StyleSheet,
     ScrollView,
     View,
-    Text,
-    StatusBar,
+    StatusBar, Image,
 } from 'react-native';
 import {AppStyles} from "./AppStyles";
-import {Button, Input} from "react-native-elements";
+import {Button, Input, Text} from "react-native-elements";
+import ImagePicker from 'react-native-image-picker';
 
 const EditProfile: () => React$Node = () => {
-
     return (
             <>
                 <StatusBar barStyle="dark-content" />
-                <SafeAreaView>
+                {/*<SafeAreaView>*/}
                     <ScrollView
                         contentInsetAdjustmentBehavior="automatic"
                         style={styles.scrollView}>
 
                         <View style={styles.container}>
-                            <View style={styles.InputContainer}>
-
+                            <View>
+                                  <Text
+                                      style={{color: '#80D1FF'}}
+                                  >Change profile picture</Text>
                             </View>
                             <View style={styles.InputContainer}>
                                 <Input
@@ -98,6 +99,7 @@ const EditProfile: () => React$Node = () => {
                                 />
                             </View>
                             <View style={styles.InputContainer}>
+
                                 <Input
                                     style={styles.body}
                                     placeholder="Work experience"
@@ -123,11 +125,11 @@ const EditProfile: () => React$Node = () => {
                             </View>
                             <Button
                                 title="Save"
-                                type="outline"
+                                style={{width: "100%"}}
                             />
                         </View>
                     </ScrollView>
-                </SafeAreaView>
+                {/*</SafeAreaView>*/}
             </>
     );
 }
@@ -135,7 +137,8 @@ const EditProfile: () => React$Node = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        padding: 20
     },
     title: {
         fontSize: AppStyles.fontSize.title,
@@ -172,12 +175,14 @@ const styles = StyleSheet.create({
     },
     InputContainer: {
         width: AppStyles.textInputWidth.main,
-        marginTop: 10
+        marginTop: 10,
+        fontSize:10
     },
     body: {
         height: 42,
         paddingLeft: 20,
         paddingRight: 20,
+        fontSize:14,
         color: AppStyles.color.text
     },
     scrollView : {

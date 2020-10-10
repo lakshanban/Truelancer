@@ -23,8 +23,10 @@ const App: () => React$Node = () => {
           rightComponent={{ icon: 'home', color: '#fff' }}
       />
 
-      {/*<BrowseContest/>*/}
-      <ContestDetail/>
+      <BrowseContest/>
+      {/*<ContestDetail/>*/}
+      {/*<EditProfile/>*/}
+      {/*<ContactPage/>*/}
     </>
   );
 };

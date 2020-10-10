@@ -5,8 +5,8 @@ import {
     View,
     StatusBar, StyleSheet,
 } from 'react-native';
-import {ListItem, Avatar, Text, Button} from 'react-native-elements'
-
+import {ListItem, Text, Button} from 'react-native-elements'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const BrowseContest: () => React$Node = () => {
 
@@ -179,29 +179,47 @@ const BrowseContest: () => React$Node = () => {
     return (
         <>
             <StatusBar barStyle="dark-content" />
-            <SafeAreaView>
+
                 <ScrollView
                     contentInsetAdjustmentBehavior="automatic"
                 >
 
                     <View >
-                        <View>
-                            <Button
-                                title="Filter"
-                            />
+                        <View style={styles.sectionFilter}>
                             <Button
                                 title="Sort"
+                                type="clear"
+                                icon={
+                                    <Icon
+                                        name="arrow-right"
+                                        size={15}
+                                        color="white"
+                                    />
+                                }
+                            />
+                            <Button
+                                title="Filter"
+                                type="clear"
+                                icon={
+                                    <Icon
+                                        name="arrow-right"
+                                        size={15}
+                                        color="white"
+                                    />
+                                }
                             />
                         </View>
 
-                    <View>
+                    <View
+                        const path
+                    >
                         {
                             list.map((l, i) => (
                                 <ListItem key={i} bottomDivider>
                                     <ListItem.Content>
-                                        <ListItem.Title>{l.status}</ListItem.Title>
-                                        <ListItem.Subtitle>{l.title}</ListItem.Subtitle>
-                                        <ListItem.Subtitle>{l.entries}  <Text> | </Text>  {l.timeStamp}</ListItem.Subtitle>
+                                        <ListItem.Title style={styles.SectionStatus}>{l.status}</ListItem.Title>
+                                        <ListItem.Subtitle style={styles.sectionTitle}>{l.title}</ListItem.Subtitle>
+                                        <ListItem.Subtitle>{l.entries}  <Text>  | </Text>  {l.timeStamp}</ListItem.Subtitle>
                                         <ListItem.Content>
                                             <Text>{l.price}</Text>
                                         </ListItem.Content>
@@ -213,7 +231,6 @@ const BrowseContest: () => React$Node = () => {
                     </View>
                     </View>
                 </ScrollView>
-            </SafeAreaView>
 
         </>
     );
@@ -223,6 +240,19 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center"
+    },
+    sectionFilter: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginHorizontal: 60
+    },
+    SectionStatus : {
+        color: '#FDC32E',
+        fontSize: 12
+    },
+    sectionTitle: {
+        fontSize: 14,
+        fontWeight: 'bold'
     }
 });
 export default BrowseContest;

@@ -38,24 +38,36 @@ const ContactPage: () => React$Node = () => {
                             <Text style={styles.sectionDescription}>
                                 kjnskdnosdnfosidnfpsidnfpsdnfcskdcskjdcnsjdncsdjncoscnosdnco
                             </Text>
-                            <Text style={styles.sectionContactDetails}>
-                                abc@gmil.com
-                                hdc@gmail.com
-                            </Text>
-                            <Text style={styles.sectionSocialMedia}>
-                                images
-                            </Text>
+                            <View style={styles.sectionContactDetails}>
+                                <Text>abc@gmil.com</Text>
+                                <Text>abc@gmil.com</Text>
+                                <Text>abc@gmil.com</Text>
+                                <Text>abc@gmil.com</Text>
+                            </View>
+
                             <SocialIcon
-                                //Social Icon using react-native-elements
-                                type="twitter"
-                                //Type of Social Icon
+                                title='Sign In With Facebook'
+                                button
+                                type='facebook'
                             />
+
                             <SocialIcon
-                                type="facebook"
-                                onPress={() => {
-                                    alert('facebook');
-                                }}
+                                title='Some Twitter Message'
+                                button
+                                type='twitter'
                             />
+
+                            <SocialIcon
+                                button
+                                type='medium'
+                            />
+
+                            <SocialIcon
+                                button
+                                light
+                                type='instagram'
+                            />
+
                         </View>
 
                     </View>
@@ -80,6 +92,7 @@ const styles = StyleSheet.create({
     sectionContainer: {
         marginTop: 32,
         paddingHorizontal: 24,
+
     },
     sectionTitle: {
         fontSize: 24,
@@ -91,12 +104,17 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: '400',
         color: Colors.dark,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     sectionContactDetails: {
         marginTop: 8,
         fontSize: 18,
         fontWeight: '400',
         color: Colors.dark,
+        padding: 20,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     sectionSocialMedia: {
         marginTop: 8,
