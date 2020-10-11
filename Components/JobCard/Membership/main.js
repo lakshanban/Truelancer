@@ -46,7 +46,6 @@ export const MainMemberNav = () => {
       <Nav.Screen name="Memberships" component={MembershipM} />
       <Nav.Screen name="Basic" component={Second} />
       <Nav.Screen name="Last" component={LastPage} />
-      <Nav.Screen name="Last" component={LastPage} />
     </Nav.Navigator>
   )
 }
