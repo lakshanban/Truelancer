@@ -7,23 +7,18 @@
  */
 
 import React from 'react';
-import { View, Text } from 'react-native';
+import {View, Text} from 'react-native';
 import BuyProposal from './Components/Pages/buyProposal';
 import ChangePassword from './Components/Pages/changePassword';
-import GDetails from './Components/Pages/Contest/details';
+import GDetails from './Components/Pages/Contest/gDetails';
 import LastP from './Components/Pages/Contest/lastP';
 import Contest from './Components/Pages/Contest/mainC';
 import LastPage from './Components/Pages/Membership/lastPage';
-import MembershipM from './Components/Pages/Membership/main'
+import MembershipM from './Components/Pages/Membership/main';
 import Second from './Components/Pages/Membership/second';
 
-
 const App: () => React$Node = () => {
-  return (
-    <View>
-      <LastP />
-    </View>
-  );
+  return <Second />;
 };
 
 export default App;
