@@ -27,25 +27,32 @@ const ContestDetail: () => React$Node = () => {
                                 <View  style={{flex: 1}}>
                                     <Text
                                         style={styles.TextFlexLeft}
-                                    >Activity status</Text>
+                                    >Open status </Text>
 
                                 </View>
                                 <View  style={{flex: 1}}>
                                     <Text
                                         style={styles.TextFlexRight}
-                                    >Time stamp</Text>
+                                    >1 month left</Text>
 
                                 </View>
                             </View>
 
                             <View>
                                 <Text style={styles.sectionTitle}>
-                                    Contest Title
+                                    I need a creative logo for my website
                                 </Text>
 
                                 <Text style={styles.sectionDescription}>
-                                    kjnskdnosdnfosidnfpsidnfpsdnfcskdcskjdcnsjdncsdjncoscnosdnco
-                                </Text>
+                                    I need a creative logo with this words: Drahoo  Win - Win (I need to be creative, so the motto is Win-Win)
+
+                                    Requests:
+
+                                    1.color: #37a000
+                                    2.Drahoo  Win - Win ( win-win is the slogan)
+                                    3. Must be simple and creative in the same time.
+
+                                    Feel free to come with your won creativity.                                </Text>
                             </View>
 
 
@@ -54,14 +61,21 @@ const ContestDetail: () => React$Node = () => {
                                     Required skills
                                 </Text>
                                 <Text>
-                                    csdsdvdvsvs
+                                    Adobe InDesign
                                 </Text>
                                 <Text>
-                                    csdsdvdvsvs
+                                    Logo Design
                                 </Text>
                                 <Text>
-                                    csdsdvdvsvs
+                                    Banner Design
                                 </Text>
+                                <Text>
+                                Graphic Design
+                            </Text>
+                                <Text>
+                                    Adobe Imageready
+                                </Text>
+
 
                             </View>
 
@@ -77,7 +91,7 @@ const ContestDetail: () => React$Node = () => {
                                     <Text
                                         style={styles.TextFlexRight}
                                     >
-                                        00.00
+                                        $ 50
                                     </Text>
                                 </View>
                             </View>
@@ -96,7 +110,7 @@ const ContestDetail: () => React$Node = () => {
                                         <Text
                                             style={styles.TextFlexRight}
                                         >
-                                            100
+                                            217
                                         </Text>
                                     </View>
                                 </View>
@@ -112,7 +126,7 @@ const ContestDetail: () => React$Node = () => {
                                         <Text
                                             style={styles.TextFlexRight}
                                         >
-                                            100
+                                            269
                                         </Text>
                                     </View>
                                 </View>
@@ -129,16 +143,19 @@ const ContestDetail: () => React$Node = () => {
                                     Posted by
                                 </Text>
                                 <Text style={styles.sectionContactDetails}>
-                                    ncedncpencpe
+                                    Anish Vijay
                                 </Text>
                                 <Text>
-                                    csdsdvdvsvs
+                                    anish.v@gmail.com
                                 </Text>
                                 <Text>
-                                    csdsdvdvsvs
+                                    anish.v@uoc.in
                                 </Text>
                                 <Text>
-                                    csdsdvdvsvs
+                                    Mumbai
+                                </Text>
+                                <Text>
+                                    India
                                 </Text>
 
                             </View>

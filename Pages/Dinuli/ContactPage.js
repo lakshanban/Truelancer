@@ -36,13 +36,15 @@ const ContactPage: () => React$Node = () => {
                                 resizeMode="contain"
                             />
                             <Text style={styles.sectionDescription}>
-                                kjnskdnosdnfosidnfpsidnfpsdnfcskdcskjdcnsjdncsdjncoscnosdnco
+                                At Truelancer.com, we are committed to provide you the best customer service experience. Also, we look forward to your suggestions and feedbacks
                             </Text>
                             <View style={styles.sectionContactDetails}>
-                                <Text>abc@gmil.com</Text>
-                                <Text>abc@gmil.com</Text>
-                                <Text>abc@gmil.com</Text>
-                                <Text>abc@gmil.com</Text>
+                                <Text>Support: support@truelancer.com</Text>
+                                <Text>Payment: payment@truelancer.com</Text>
+                                <Text>Press: press@truelancer.com</Text>
+                                <Text>Skype: truelancer.support</Text>
+                                <Text>India: +91 875 059 6981</Text>
+                                <Text>USA: +1 650-646-3805</Text>
                             </View>
 
                             <SocialIcon

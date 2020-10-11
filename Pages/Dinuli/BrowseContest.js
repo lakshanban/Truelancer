@@ -14,89 +14,99 @@ export const BrowseContest: () => React$Node = ({ navigation }) => {
     const list = [
         {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'I need a creative logo for my website',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 50.00'
         },
         {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'Unique Wordpress webpage ',
+            entries: '390 entries',
+            timeStamp: '1 month ago',
+            price: '$ 100.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'Design a website mockup',
+            entries: '300 entries',
+            timeStamp: '1 month ago',
+            price: '$ 60.00'
+        },  {
+            status: 'Guaranteed',
+            title: 'I need a creative logo for my website',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 50.00'
+        },
+        {
+            status: 'Guaranteed',
+            title: 'Edit video ',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 30.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'Design a website mockup',
+            entries: '300 entries',
+            timeStamp: '1 month ago',
+            price: '$ 60.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'I need a creative logo for my website',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 50.00'
+        },
+        {
+            status: 'Guaranteed',
+            title: 'Edit video ',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 30.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'Design a website mockup',
+            entries: '300 entries',
+            timeStamp: '1 month ago',
+            price: '$ 60.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'I need a creative logo for my website',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 50.00'
+        },
+        {
+            status: 'Guaranteed',
+            title: 'Edit video ',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 30.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'Design a website mockup',
+            entries: '300 entries',
+            timeStamp: '1 month ago',
+            price: '$ 60.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'I need a creative logo for my website',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 50.00'
+        },
+        {
+            status: 'Guaranteed',
+            title: 'Edit video ',
+            entries: '217 entries',
+            timeStamp: '1 month ago',
+            price: '$ 30.00'
         }, {
             status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
-        }, {
-            status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
-        }, {
-            status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
-        }, {
-            status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
-        }, {
-            status: 'Guaranteed',
-            title: 'Contest title',
-            entries: '100 entries',
-            timeStamp: '00/00/00 00:00',
-            price: 'Rs. 00.00 /='
+            title: 'Design a website mockup',
+            entries: '300 entries',
+            timeStamp: '1 month ago',
+            price: '$ 60.00'
         }
     ]
 
