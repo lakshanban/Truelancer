@@ -45,14 +45,7 @@ const ContestDetail: () => React$Node = () => {
 
                                 <Text style={styles.sectionDescription}>
                                     I need a creative logo with this words: Drahoo  Win - Win (I need to be creative, so the motto is Win-Win)
-
-                                    Requests:
-
-                                    1.color: #37a000
-                                    2.Drahoo  Win - Win ( win-win is the slogan)
-                                    3. Must be simple and creative in the same time.
-
-                                    Feel free to come with your won creativity.                                </Text>
+                                </Text>
                             </View>
 
 
