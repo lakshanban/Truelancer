@@ -77,12 +77,12 @@ export const LakshanNav = () => {
     return (
         <LakshanStack.Navigator>
             <LakshanStack.Screen name="JobList" component={TabNavPage} options={({ navigation, route }) => ({
-                headerTitle: () => <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Find Jobs</Text>,
+                headerTitle: () => <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Find Services</Text>,
                 headerRight: () => <Button title='filter' onPress={() => { navigation.push('FilterPage') }} />,
                 headerStyle: { backgroundColor: '#0091ff' }
             })} />
             <LakshanStack.Screen name="JobDetails" component={JobDetails} options={({ navigation, route }) => ({
-                headerTitle: () => <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Job Details</Text>,
+                headerTitle: () => <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Service Details</Text>,
                 headerStyle: { backgroundColor: '#0091ff' }
             })} />
             <LakshanStack.Screen name="PlaceOrder" component={PaymentPage}
@@ -92,7 +92,7 @@ export const LakshanNav = () => {
                 })} />
             <LakshanStack.Screen name="FilterPage" component={FilterPage}
                 options={({ navigation, route }) => ({
-                    headerTitle: () => <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Filter Jobs</Text>,
+                    headerTitle: () => <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Filter Services</Text>,
                     headerStyle: { backgroundColor: '#0091ff' }
                 })} />
         </LakshanStack.Navigator>

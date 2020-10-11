@@ -81,14 +81,18 @@ const list = [
 ];
 
 const FindFreelancers = () => {
-  const buttons = ['Treanding', 'Best Rated', 'Most Popular'];
+  const buttons = ['Trending', 'Best Rated', 'Most Popular'];
 
   return (
-    <View>
+    <View style={{marginTop:30}}>
 
       <ButtonGroup selectedIndex={0} buttons={buttons} />
-      <Input placeholder="Search" />
-      <ScrollView>
+
+      <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+      >
+
+        <Input placeholder="Search" />
         {list.map((l, i) => (
           <ListItem
             key={i}

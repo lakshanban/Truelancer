@@ -121,7 +121,7 @@ export const DashDrawer = () => {
   return (
     <DrawerNav.Navigator>
       <DrawerNav.Screen name="DashBoard" component={Dashboard} />
-      <DrawerNav.Screen name="Search Jobs" component={LakshanNav} />
+      <DrawerNav.Screen name="Search Services" component={LakshanNav} />
       <DrawerNav.Screen name="Buy Proposals" component={BuyProposal} />
       <DrawerNav.Screen name="Launch Contest" component={LaunchContestNav} />
       <DrawerNav.Screen name="Browse Contest" component={ContestNav} />
